@@ -6,8 +6,8 @@
     <app-news-list [childNewsStoryList]="masterNewsStoryList" (clickSender)="showInfo($event)"></app-news-list>
   </div>
   <div>
-    <app-show-info [childSelectedNewsStory]="selectedNewsStory" (clickedDone)="finishedReading()"></app-show-info>
     <app-comments [childSelectedNewsStory]="selectedNewsStory"
     (clickedComment)="finishedCommenting()"></app-comments>
+    <app-show-info [childSelectedNewsStory]="selectedNewsStory" (clickedDone)="finishedReading()"></app-show-info>
   </div>
 </div>
