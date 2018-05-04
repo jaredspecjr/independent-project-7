@@ -6,9 +6,13 @@ import { NewsStory } from '../models/newsStory.model';
   styleUrls: ['./news-list.component.css']
 })
 export class NewsListComponent {
+  filterByCategory: string ="allStories";
   @Input() childNewsStoryList: NewsStory[];
   @Output() clickSender = new EventEmitter();
 
+  onChange(optionFromMenu){
+    this.filterByCategory = optionFromMenu;
+  }
   titleClicked(newsToShow: NewsStory) {
     this.clickSender.emit(newsToShow);
   }
