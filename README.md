@@ -31,4 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ##Specs
 For this project I'm choosing to rebuild(or get close to it) NYTimes https://www.nytimes.com/
 | Specification | Input | Output |
-| Page should display stories |  |  |
+| Page should display a list of news stories with a title, author name, and 1 or 2 bullet points of information  |  on page load | list of stories in a styled organized fashion |
+| user should be able to click on a title to get more information | clicks on title | page displays full story |
+| user should be able to make a comment and save it to the current story | user enter comment into text field | comment appends in comment section |
+| page should have a nav bar that shows categories | click Politics | page displays news stories only about politics |
