@@ -8,12 +8,14 @@ import { ShowInfoComponent } from './show-info/show-info.component';
 import { CommentsComponent } from './comments/comments.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NewsListComponent,
     ShowInfoComponent,
     CommentsComponent
+
   ],
   imports: [
     BrowserModule,
