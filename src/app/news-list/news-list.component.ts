@@ -12,4 +12,5 @@ export class NewsListComponent {
   titleClicked(newsToShow: NewsStory) {
     this.clickSender.emit(newsToShow);
   }
+  commentClicked()
 }

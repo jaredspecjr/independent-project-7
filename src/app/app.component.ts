@@ -14,6 +14,10 @@ export class AppComponent {
     new NewsStory('U.S.-China Trade Talks End With Strong Demands', 'By KEITH BRADSHER', 'The list of U.S. demands was sweeping, and showed that the Trump administration has no intention of backing down.', 'Lorem ipsum dolor sit amet,  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 0)
   ];
 
+  finishedCommenting() {
+    this.selectedNewsStory = null;
+  }
+
   finishedReading() {
     this.selectedNewsStory = null;
   }

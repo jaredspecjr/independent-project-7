@@ -1,3 +1,4 @@
-<p>
-  comments works!
-</p>
+<div *ngIf="childSelectedNewsStory">
+  <input [(ngModel)]="childSelectedNewsStory.commentSection" >
+  <button (click)="finishedCommenting()">Comment</button>
+</div>
