@@ -35,3 +35,7 @@ For this project I'm choosing to rebuild(or get close to it) NYTimes https://www
 | user should be able to click on a title to get more information | clicks on title | page displays full story |
 | user should be able to make a comment and save it to the current story | user enter comment into text field | comment appends in comment section |
 | page should have a nav bar that shows categories | click Politics | page displays news stories only about politics |
+
+Other Features that I may not be able to implement just yet
+| page should have a search bar | Rick and Morty | news stories about fans wanting Szechuan sauce |
+| page should have images | on page load | displayed images |
