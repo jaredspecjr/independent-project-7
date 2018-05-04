@@ -3,6 +3,12 @@
   max-width: 300px;
 }
 
+#titleStyle:hover{
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
 #author{
   color: grey;
 }
