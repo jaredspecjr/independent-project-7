@@ -1,2 +1,11 @@
- <div *ngFor="let currentNewsStory of childNewsStoryList">{{currentNewsStory.title}}<br>{{currentNewsStory.author}}<br>{{currentNewsStory.info1}}<br>{{currentNewsStory.info2}}
- </div>
+<div class="row">
+  <div *ngFor="let currentNewsStory of childNewsStoryList">
+    <div class="col-md">
+      <div id="story" class="card">
+        <h4>{{currentNewsStory.title}}</h4>
+        <span id="author">{{currentNewsStory.author}}</span><br>
+        {{currentNewsStory.info1}}
+      </div>
+    </div>
+  </div>
+</div>
