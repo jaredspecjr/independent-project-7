@@ -6,7 +6,7 @@
   </select>
 </div>
 <div class="row">
-  <div *ngFor="let currentNewsStory of childNewsStoryList | category">
+  <div *ngFor="let currentNewsStory of childNewsStoryList">
     <div class="col-md">
       <div id="story" class="card">
         <h4 id ="titleStyle" (click)="titleClicked(currentNewsStory)">{{currentNewsStory.title}}</h4>
