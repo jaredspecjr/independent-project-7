@@ -44,3 +44,54 @@ Other Features that I may not be able to implement just yet
 thoughts on how to push new comments to comment section. maybe root component needs an empty array added to the master list?. how exactly do i set up a another button to use my current selected news story without clashing with the first button?  
 
 how do I set up the categories correctly? maybe I need a function that checks what number my current story category is and then have a function that when i click on a button or text it runs that check and pushes it to a new array.
+
+# Project Name
+NYTimes-clone
+
+#### A brief program description
+Website Styled to look similar to The NYTimes
+#### By _**Jared Lutz**_
+
+## Description
+
+This Webpage is an on-going project that will look and function similar to NYTimes Website
+
+## Setup/Installation Requirements
+
+* Install program by cloning this repository.
+* run npm install in the root directory of the independend-project-7 folder
+* make sure angular is installed on your computer
+* type ng serve --open in the terminal and wait for it to load.
+
+## Known Bugs
+
+Cannot add more than one comment per story.
+Pipe is not configured correctly.
+
+
+## Support and contact details
+
+For Support, contact:
+Jared Lutz at jaredspecjr@gmail.com
+
+## Technologies Used
+
+* HTML
+* CSS _(Bootstrap)_
+* JavaScript _(jQuery)_
+* Node
+* Webpack
+* Angular
+
+
+### License
+
+This software is licensed under the MIT license.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Copyright (c) 2018 **Jared Lutz**
