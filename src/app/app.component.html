@@ -7,5 +7,7 @@
   </div>
   <div>
     <app-show-info [childSelectedNewsStory]="selectedNewsStory" (clickedDone)="finishedReading()"></app-show-info>
+    <app-comments [childSelectedNewsStory]="selectedNewsStory"
+    (clickedComment)="finishedCommenting()"></app-comments>
   </div>
 </div>
