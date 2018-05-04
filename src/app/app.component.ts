@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { NewsStory } from './models/newsStory.model';
 @Component({
   selector: 'app-root',

@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 import { NewsStory } from '../models/newsStory.model';
 @Component({
   selector: 'app-news-list',
@@ -7,6 +7,9 @@ import { NewsStory } from '../models/newsStory.model';
 })
 export class NewsListComponent {
   @Input() childNewsStoryList: NewsStory[];
+  @Output() clickSender = new EventEmitter();
 
-
+  titleClicked(newsToShow: NewsStory) {
+    this.clickSender.emit(newsToShow);
+  }
 }

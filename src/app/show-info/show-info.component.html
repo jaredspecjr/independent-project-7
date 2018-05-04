@@ -1,4 +1,4 @@
-<div *ngIf="selectedNewsStory">
-  <p>{{selectedTitle.fullStory}}</p>
+<div *ngIf="childSelectedNewsStory">
+  {{childSelectedNewsStory.fullStory}}
   <button (click)="finishedReading()">Done</button>
 </div>

@@ -2,7 +2,7 @@
   <div *ngFor="let currentNewsStory of childNewsStoryList">
     <div class="col-md">
       <div id="story" class="card">
-        <h4 (click)="showInfo(currentNewsStory)">{{currentNewsStory.title}}</h4>
+        <h4 (click)="titleClicked(currentNewsStory)">{{currentNewsStory.title}}</h4>
         <span id="author">{{currentNewsStory.author}}</span><br>
         {{currentNewsStory.info1}}
       </div>

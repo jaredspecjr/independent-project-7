@@ -3,6 +3,9 @@
     <h1>{{ title }}</h1>
   </div>
   <div>
-    <app-news-list [childNewsStoryList]="masterNewsStoryList"></app-news-list>
+    <app-news-list [childNewsStoryList]="masterNewsStoryList" (clickSender)="showInfo($event)"></app-news-list>
+  </div>
+  <div>
+    <app-show-info [childSelectedNewsStory]="selectedNewsStory" (clickedDone)="finishedReading()"></app-show-info>
   </div>
 </div>
