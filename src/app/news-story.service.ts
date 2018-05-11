@@ -18,7 +18,7 @@ newsStories: FirebaseListObservable<any[]>
   }
 
 
-  getNewsStoryById(newsStoryId: number) {
+  getNewsStoryById(newsStoryId: string) {
     return this.database.object('newsStories/' + newsStoryId);
   }
 }
