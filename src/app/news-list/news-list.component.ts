@@ -18,7 +18,7 @@ newsStories: NewsStory[];
   //   this.filterByCategory = optionFromMenu;
   // }
   ngOnInit(){
-
+    this.newsStories = this.newsStoryService.getNewsStories();
   }
 
   goToDetailPage(clickedNewsStory: NewsStory) {
