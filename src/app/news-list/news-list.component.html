@@ -1,10 +1,4 @@
-<!-- <div>
-  <select (change)="onChange($event.target.value)">
-    <option value="allStories">All Stories</option>
-    <option value="usa">U.S</option>
-    <option value="world">World</option>
-  </select>
-</div> -->
+
 <div class="row">
   <div *ngFor="let newsStory of newsStories | async">
     <div class="col-md">
@@ -12,10 +6,6 @@
         <h4 id ="titleStyle" (click)="goToDetailPage(newsStory)">{{newsStory.title}}</h4>
         <span id="author">{{newsStory.author}}</span><br>
         {{newsStory.info1}}<br>
-        <!-- <span id="comment" (click)="commentButtonClicked(currentNewsStory)">Comment</span> -->
-      </div>
-      <div id="comments" class="card">
-        Comment: {{newsStory.commentSection}}
       </div>
     </div>
   </div>
