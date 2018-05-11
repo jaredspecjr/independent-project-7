@@ -20,7 +20,7 @@ export class ItemDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.newsStoryId = urlParameters['id'];
     });
-    this.newsStoryToDisplay = this.newsStoryService.getNewsStoryById(this.newsStoryId);
+    // this.newsStoryToDisplay = this.newsStoryService.getNewsStoryById(this.newsStoryId);
   }
 
 }

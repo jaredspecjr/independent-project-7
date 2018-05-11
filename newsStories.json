@@ -3,12 +3,16 @@
     "author": "By NATALIE KITROEFF",
     "info1": "With 164,000 jobs added in April, it was the 91st consecutive month of gains, far and away the longest streak of increases on record",
     "fullStory": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "id": "1"
+    "id": "1",
+    "category": "1",
+    "commentSection": " "
     }, {
     "title": "U.S.-China Trade Talks End With Strong Demands",
     "author": "By KEITH BRADSHER",
     "info1": "The list of U.S. demands was sweeping, and showed that the Trump administration has no intention of backing down",
     "fullStory": "Lorem ipsum dolor sit amet,  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "id": "2"
+    "id": "2",
+    "category": "1",
+    "commentSection": " "
       }]
 }
