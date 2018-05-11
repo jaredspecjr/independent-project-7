@@ -2,12 +2,13 @@
   <div style="text-align:center">
     <h1>{{ title }}</h1>
   </div>
-  <div>
+  <!-- <div>
     <app-news-list [childNewsStoryList]="masterNewsStoryList" (clickSender)="showInfo($event)"></app-news-list>
   </div>
   <div>
     <app-comments [childSelectedNewsStory]="selectedNewsStory"
     (clickedComment)="finishedCommenting()"></app-comments>
     <app-show-info [childSelectedNewsStory]="selectedNewsStory" (clickedDone)="finishedReading()"></app-show-info>
-  </div>
+  </div> -->
+  <router-outlet></router-outlet>
 </div>
