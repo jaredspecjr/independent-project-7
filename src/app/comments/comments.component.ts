@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { NewsStory } from '../newsStory.model';
 
 @Component({
@@ -7,10 +7,9 @@ import { NewsStory } from '../newsStory.model';
   styleUrls: ['./comments.component.css']
 })
 export class CommentsComponent {
-  @Input() childSelectedNewsStory: NewsStory;
-  @Output() clickedComment = new EventEmitter();
 
-  finishedCommenting() {
-    this.clickedComment.emit();
+  constructor() { }
+  ngOnInit(){
+
   }
 }

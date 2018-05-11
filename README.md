@@ -15,10 +15,8 @@ Other Features that I may not be able to implement just yet
 | page should have a search bar | Rick and Morty | news stories about fans wanting Szechuan sauce |
 | page should have images | on page load | displayed images |
 
-##Notes--Thoughts-Questions
-thoughts on how to push new comments to comment section. maybe root component needs an empty array added to the master list?. how exactly do i set up a another button to use my current selected news story without clashing with the first button?  
+##Notes--Thoughts--Questions
 
-how do I set up the categories correctly? maybe I need a function that checks what number my current story category is and then have a function that when i click on a button or text it runs that check and pushes it to a new array.
 
 # Project Name
 NYTimes-clone

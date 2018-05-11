@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 // import { CategoryPipe } from './category.pipe';
 import { NewsListComponent } from './news-list/news-list.component';
-import { ShowInfoComponent } from './show-info/show-info.component';
 import { CommentsComponent } from './comments/comments.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { masterFirebaseConfig } from './api-keys';
@@ -24,7 +23,6 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     NewsListComponent,
-    ShowInfoComponent,
     CommentsComponent,
     ItemDetailComponent
     // CategoryPipe
