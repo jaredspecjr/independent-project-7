@@ -19,10 +19,6 @@ newsStories: FirebaseListObservable<any[]>
 
 
   getNewsStoryById(newsStoryId: number) {
-    // for (let i = 0; i <= NEWSSTORIES.length - 1; i++) {
-    //   if (NEWSSTORIES[i].id === newsStoryId) {
-    //     return NEWSSTORIES[i];
-    //   }
-    // }
+    return this.database.object('newsStories/' + newsStoryId);
   }
 }

@@ -10,7 +10,7 @@ import { NewsStoryService } from '../news-story.service';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private newsStoryService: NewsStory) { }
+  constructor(private newsStoryService: NewsStoryService) { }
 
   ngOnInit() {
   }

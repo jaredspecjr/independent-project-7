@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { NewsStory } from '../newsStory.model';
 import { NewsStoryService } from '../news-story.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-item-detail',
@@ -11,13 +12,13 @@ import { NewsStoryService } from '../news-story.service';
   providers: [NewsStoryService]
 })
 export class ItemDetailComponent implements OnInit {
-  newsStoryId: number;
-  newsStoryToDisplay: NewsStory;
+  newsStoryId: string;
+  newsStoryToDisplay;
   constructor(private route: ActivatedRoute, private location: Location, private newsStoryService: NewsStoryService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.newsStoryId = parseInt(urlParameters['id']);
+      this.newsStoryId = urlParameters['id'];
     });
     this.newsStoryToDisplay = this.newsStoryService.getNewsStoryById(this.newsStoryId);
   }

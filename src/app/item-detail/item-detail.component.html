@@ -1,8 +1,8 @@
 <div>
-  <h1>{{newsStoryToDisplay.title}}</h1>
-  <h3>{{newsStoryToDisplay.author}}</h3>
-  <h4>{{newsStoryToDisplay.info1}}</h4>
-  <p>{{newsStoryToDisplay.fullStory}}</p>
+  <h1>{{(newsStoryToDisplay | async)?.title}}</h1>
+  <h3>{{(newsStoryToDisplay | async)?.author}}</h3>
+  <h4>{{(newsStoryToDisplay | async)?.info1}}</h4>
+  <p>{{(newsStoryToDisplay | async)?.fullStory}}</p>
 </div>
 <div class="card">
 </div>
