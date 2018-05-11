@@ -21,4 +21,10 @@ newsStories: FirebaseListObservable<any[]>
   getNewsStoryById(newsStoryId: string) {
     return this.database.object('newsStories/' + newsStoryId);
   }
+
+  updateNewsStory(localUpdatedNewsStory){
+    let newsStoryEntryInFirebase = this.getNewsStoryById(localUpdatedNewsStory.$key);
+    newsStoryEntryInFirebase.update({title: localUpdatedNewsStory.title,
+    author: localUpdatedNewsStory.author, info1: localUpdatedNewsStory.info1, fullStory: localUpdatedNewsStory.fullStory, commentSection: localUpdatedNewsStory.commentSection});
+  }
 }

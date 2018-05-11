@@ -3,10 +3,11 @@
   <h3>{{(newsStoryToDisplay | async)?.author}}</h3>
   <h4>{{(newsStoryToDisplay | async)?.info1}}</h4>
   <p>{{(newsStoryToDisplay | async)?.fullStory}}</p>
-  <p>{{(newsStoryToDisplay | async)?.commentSection}}</p>
 </div>
 <div class="card">
+  <h3>Comments section</h3>
+  <p>{{(newsStoryToDisplay | async)?.commentSection}}</p>
 </div>
-<div class="footer">
+<div>
   <app-comments></app-comments>
 </div>
