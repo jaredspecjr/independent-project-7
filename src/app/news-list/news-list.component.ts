@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NewsStory } from '../newsStory.model';
 import { Router } from '@angular/router';
 import { NewsStoryService } from '../news-story.service';
-import { FirebaseListObservable } from 'angularfire2/database';
+
 @Component({
   selector: 'app-news-list',
   templateUrl: './news-list.component.html',
@@ -10,25 +10,16 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [NewsStoryService]
 })
 export class NewsListComponent implements OnInit {
-  filterByCategory: string ="allStories";
-  // @Input() childNewsStoryList: NewsStory[];
-  // @Output() clickSender = new EventEmitter();
+  newsStories;
+
 constructor(private router: Router, private newsStoryService: NewsStoryService) { }
-newsStories: FirebaseListObservable<any[]>;
-  // onChange(optionFromMenu){
-  //   this.filterByCategory = optionFromMenu;
-  // }
+
+  goToDetailPage(clickedNewsStory) {
+    this.router.navigate(['newsStories', clickedNewsStory.$key]);
+  }
   ngOnInit(){
     this.newsStories = this.newsStoryService.getNewsStories();
   }
 
-  goToDetailPage(clickedNewsStory: NewsStory) {
-    this.router.navigate(['newsStories', clickedNewsStory.$key]);
-  }
-  // titleClicked(newsToShow: NewsStory) {
-  //   this.clickSender.emit(newsToShow);
-  // }
-  // commentButtonClicked(commentToShow: NewsStory) {
-  //   this.clickSender.emit(commentToShow);
-  // }
+
 }
