@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NewsStory } from '../models/newsStory.model';
+import { NewsStory } from '../newsStory.model';
 
 @Component({
   selector: 'app-comments',

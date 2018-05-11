@@ -7,6 +7,7 @@ import { routing } from './app.routing';
 import { NewsListComponent } from './news-list/news-list.component';
 import { ShowInfoComponent } from './show-info/show-info.component';
 import { CommentsComponent } from './comments/comments.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 
 
@@ -15,7 +16,8 @@ import { CommentsComponent } from './comments/comments.component';
     AppComponent,
     NewsListComponent,
     ShowInfoComponent,
-    CommentsComponent
+    CommentsComponent,
+    ItemDetailComponent
     // CategoryPipe
 
   ],

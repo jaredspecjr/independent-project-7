@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NewsStory } from '../models/newsStory.model';
+import { NewsStory } from '../newsStory.model';
 
 @Component({
   selector: 'app-show-info',
@@ -7,11 +7,11 @@ import { NewsStory } from '../models/newsStory.model';
   styleUrls: ['./show-info.component.css']
 })
 export class ShowInfoComponent {
-  @Input() childSelectedNewsStory: NewsStory;
-  @Output() clickedDone = new EventEmitter();
+  // @Input() childSelectedNewsStory: NewsStory;
+  // @Output() clickedDone = new EventEmitter();
 
-  finishedReading() {
-    this.clickedDone.emit();
-  }
+  // finishedReading() {
+  //   this.clickedDone.emit();
+  // }
 
 }
