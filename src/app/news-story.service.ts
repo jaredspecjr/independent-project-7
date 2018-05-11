@@ -17,6 +17,10 @@ newsStories: FirebaseListObservable<any[]>
     this.newsStories.push(newNewsStory);
   }
 
+  addComment(newsStoryId, newCommentSection){
+    let newsStoryInFirebase = this.getNewsStoryById(newsStoryId.$key);
+    newsStoryInFirebase.update({commentSection: newsStoryId.commentSection + newCommentSection});
+  }
 
   getNewsStoryById(newsStoryId: string) {
     return this.database.object('newsStories/' + newsStoryId);

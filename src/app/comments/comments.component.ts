@@ -22,4 +22,7 @@ export class CommentsComponent {
       this.newsStoryToDisplay = dataLastEmittedFromObserver;
     })
   }
+  submitComment(newsStoryId, newCommentSection){
+    this.newsStoryService.addComment(newsStoryId, newCommentSection);
+  }
 }
