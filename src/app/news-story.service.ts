@@ -9,4 +9,12 @@ export class NewsStoryService {
   getNewsStories() {
     return NEWSSTORIES;
   }
+
+  getNewsStoryById(newsStoryId: number) {
+    for (let i = 0; i <= NEWSSTORIES.length - 1; i++) {
+      if (NEWSSTORIES[i].id === newsStoryId) {
+        return NEWSSTORIES[i];
+      }
+    }
+  }
 }
