@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NewsStory } from '../newsStory.model';
 import { Router } from '@angular/router';
 import { NewsStoryService } from '../news-story.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-news-list',
   templateUrl: './news-list.component.html',
@@ -13,7 +14,7 @@ export class NewsListComponent implements OnInit {
   // @Input() childNewsStoryList: NewsStory[];
   // @Output() clickSender = new EventEmitter();
 constructor(private router: Router, private newsStoryService: NewsStoryService) { }
-newsStories: NewsStory[];
+newsStories: FirebaseListObservable<any[]>;
   // onChange(optionFromMenu){
   //   this.filterByCategory = optionFromMenu;
   // }

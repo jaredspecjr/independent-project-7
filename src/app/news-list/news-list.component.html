@@ -6,7 +6,7 @@
   </select>
 </div> -->
 <div class="row">
-  <div *ngFor="let newsStory of newsStories">
+  <div *ngFor="let newsStory of newsStories | async">
     <div class="col-md">
       <div id="story" class="card">
         <h4 id ="titleStyle" (click)="goToDetailPage(newsStory)">{{newsStory.title}}</h4>
