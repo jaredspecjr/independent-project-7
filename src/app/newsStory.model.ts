@@ -4,6 +4,5 @@ export class NewsStory {
     public info1: string,
     public fullStory: string,
     public category: number,
-    public commentSection: string,
-    public id: number) { }
+    public commentSection: string) { }
 }

@@ -13,11 +13,16 @@ newsStories: FirebaseListObservable<any[]>
     return this.newsStories;
   }
 
+  addStory(newNewsStory: NewsStory){
+    this.newsStories.push(newNewsStory);
+  }
+
+
   getNewsStoryById(newsStoryId: number) {
-    for (let i = 0; i <= NEWSSTORIES.length - 1; i++) {
-      if (NEWSSTORIES[i].id === newsStoryId) {
-        return NEWSSTORIES[i];
-      }
-    }
+    // for (let i = 0; i <= NEWSSTORIES.length - 1; i++) {
+    //   if (NEWSSTORIES[i].id === newsStoryId) {
+    //     return NEWSSTORIES[i];
+    //   }
+    // }
   }
 }

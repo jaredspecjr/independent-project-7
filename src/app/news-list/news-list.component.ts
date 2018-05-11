@@ -23,7 +23,7 @@ newsStories: FirebaseListObservable<any[]>;
   }
 
   goToDetailPage(clickedNewsStory: NewsStory) {
-    this.router.navigate(['newsStories', clickedNewsStory.id]);
+    // this.router.navigate(['newsStories', clickedNewsStory.id]);
   }
   // titleClicked(newsToShow: NewsStory) {
   //   this.clickSender.emit(newsToShow);
