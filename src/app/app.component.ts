@@ -6,5 +6,5 @@ import { NewsStory } from './newsStory.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'The New York Times';
+  title = 'The Not York Times';
 }
