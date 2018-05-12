@@ -6,8 +6,6 @@ Add ability to deploy(host) website.
 ##Specs
 | Specification | Input | Output |
 | --- | --- | --- |
-For this project I'm choosing to rebuild(or get close to it) NYTimes https://www.nytimes.com/
-| Specification | Input | Output |
 | Page should display a list of news stories with a title, author name, and 1 or 2 bullet points of information  |  on page load | list of stories in a styled organized fashion |
 | user should be able to click on a title to get more information | clicks on title | page displays full story |
 | user should be able to make a comment and save it to the current story | user enter comment into text field | comment appends in comment section |
