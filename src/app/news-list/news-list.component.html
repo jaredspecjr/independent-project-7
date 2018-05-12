@@ -1,17 +1,21 @@
 
-<div class="row">
-  <div *ngFor="let newsStory of newsStories | async">
-    <div class="col-md">
-      <div id="story">
-        <h4 id ="titleStyle" (click)="goToDetailPage(newsStory)">{{newsStory.title}}</h4>
-        <span id="author">{{newsStory.author}}</span><br>
-        {{newsStory.info1}}<br>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let newsStory of newsStories | async">
+      <div class="col-md">
+        <div class="card">
+          <div id="story">
+            <h4 id ="titleStyle" (click)="goToDetailPage(newsStory)">{{newsStory.title}}</h4>
+            <span id="author">{{newsStory.author}}</span><br>
+            {{newsStory.info1}}<br>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div *ngIf="currentRoute === '/admin'">
+          <app-edit-story [selectedNewsStory]="newsStory"></app-edit-story>
+        </div>
       </div>
     </div>
-    <div>
-      <div *ngIf="currentRoute === '/admin'">
-        <app-edit-story [selectedNewsStory]="newsStory"></app-edit-story>
-      </div>
-    </div>
-  </div>
+  </div>  
 </div>
