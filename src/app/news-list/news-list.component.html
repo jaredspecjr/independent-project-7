@@ -7,6 +7,8 @@
         <span id="author">{{newsStory.author}}</span><br>
         {{newsStory.info1}}<br>
       </div>
+    </div>
+    <div class="col-md">
       <div *ngIf="currentRoute === '/admin'">
         <app-edit-story [selectedNewsStory]="newsStory"></app-edit-story>
       </div>
