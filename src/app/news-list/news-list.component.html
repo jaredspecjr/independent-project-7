@@ -2,7 +2,7 @@
 <div class="row">
   <div *ngFor="let newsStory of newsStories | async">
     <div class="col-md">
-      <div id="story" class="card">
+      <div id="story">
         <h4 id ="titleStyle" (click)="goToDetailPage(newsStory)">{{newsStory.title}}</h4>
         <span id="author">{{newsStory.author}}</span><br>
         {{newsStory.info1}}<br>
