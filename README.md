@@ -3,20 +3,6 @@ Add routing to project,
 Add database to firebase,
 Add ability to deploy(host) website.
 
-##Specs
-| Specification | Input | Output |
-| --- | --- | --- |
-| Page should display a list of news stories with a title, author name, and 1 or 2 bullet points of information  |  on page load | list of stories in a styled organized fashion |
-| user should be able to click on a title to get more information | clicks on title | page displays full story |
-| user should be able to make a comment and save it to the current story | user enter comment into text field | comment appends in comment section |
-| page should have a nav bar that shows categories | click Politics | page displays news stories only about politics |
-
-Other Features that I may not be able to implement just yet
-| page should have a search bar | Rick and Morty | news stories about fans wanting Szechuan sauce |
-| page should have images | on page load | displayed images |
-
-##Notes--Thoughts--Questions
-
 
 # Project Name
 NYTimes-clone
@@ -34,6 +20,18 @@ Website Styled to look similar to The NYTimes
 * make sure angular is installed on your computer
 * type ng serve --open in the terminal and wait for it to load.
 * you may also visit this website https://independent-project-14204.firebaseapp.com/
+
+## SPECS
+| Specification | Input | Output |
+| --- | --- | --- |
+| Page should display a list of news stories with a title, author name, and 1 or 2 bullet points of information  |  on page load | list of stories in a styled organized fashion |
+| user should be able to click on a title to get more information | clicks on title | page displays full story |
+| user should be able to make a comment and save it to the current story | user enter comment into text field | comment appends in comment section |
+| page should have a nav bar that shows categories | click Politics | page displays news stories only about politics |
+
+Other Features that I may not be able to implement just yet
+| page should have a search bar | Rick and Morty | news stories about fans wanting Szechuan sauce |
+| page should have images | on page load | displayed images |
 
 ## Known Bugs
 
