@@ -33,6 +33,7 @@ Website Styled to look similar to The NYTimes
 * run npm install in the root directory of the independend-project-7 folder
 * make sure angular is installed on your computer
 * type ng serve --open in the terminal and wait for it to load.
+* you may also visit this website https://independent-project-14204.firebaseapp.com/
 
 ## Known Bugs
 
